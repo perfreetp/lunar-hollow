@@ -13,6 +13,8 @@ credentials*.json
 .npmrc
 .pypirc
 node_modules/
+dist/
+tests/e2e/shots/
 __pycache__/
 .venv/
 venv/
