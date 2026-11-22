@@ -1,0 +1,21 @@
+{
+  "name": "runway-marking-renderer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "机场跑道标志线渲染工具 — TypeScript + Web Components + MapLibre GL JS",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "maplibre-gl": "6.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^7.1.7",
+    "vitest": "^3.2.4"
+  }
+}
