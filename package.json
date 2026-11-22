@@ -1,0 +1,21 @@
+{
+  "name": "clockwork-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "基于 Svelte + three.js 的发条玩具齿轮组装配与运动预演工具",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "svelte": "^4.2.19",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  }
+}

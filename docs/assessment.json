@@ -1,0 +1,31 @@
+{
+  "layerA": {
+    "overlapLayer": 1,
+    "g1Layer": 0,
+    "differ": true,
+    "hasOverlapIssue": true
+  },
+  "gapWarn": {
+    "hasGapOrDisconnect": true,
+    "farGearStatic": true
+  },
+  "teethLinkage": {
+    "before": -0.5,
+    "afterTeethChangeOldPos": 0,
+    "ratioAfterReposition": -0.75,
+    "expected": -0.75,
+    "matchesExpected": true
+  },
+  "exportShape": {
+    "schema": "clockwork-studio-config",
+    "gearCount": 5,
+    "hasTransmission": true,
+    "hasLayout": true
+  },
+  "importRoundtrip": {
+    "sameGearCount": true,
+    "sameDriver": true,
+    "sameTeeth": true,
+    "edgesMatch": true
+  }
+}
