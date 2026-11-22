@@ -1,0 +1,28 @@
+{
+  "name": "caihua-fade-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "古建彩画褪色模拟与修复预览工具",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "postprocessing": "^6.36.4",
+    "three": "0.169.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/three": "0.169.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.7",
+    "vue-tsc": "^2.2.0",
+    "ws": "^8.23.0"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}
