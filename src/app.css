@@ -1,0 +1,146 @@
+:root {
+  --bg: #0e141c;
+  --panel: rgba(16, 24, 34, 0.82);
+  --panel-border: rgba(120, 170, 220, 0.18);
+  --text: #e6eef7;
+  --muted: #8ea3b8;
+  --accent: #38bdf8;
+  --accent-2: #22d3ee;
+  --warn: #f59e0b;
+  --danger: #ef4444;
+  --ok: #34d399;
+  font-family:
+    'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 14px 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.panel h2 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel h2 .step {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #06121c;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid var(--panel-border);
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 7px 12px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+button:hover:not(:disabled) {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: linear-gradient(135deg, #0ea5e9, #0891b2);
+  border-color: transparent;
+  font-weight: 600;
+}
+
+button.active {
+  background: rgba(56, 189, 248, 0.35);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.kv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 3px 0;
+  color: var(--muted);
+}
+
+.kv b {
+  color: var(--text);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.geo-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.geo-pill.loading {
+  background: rgba(245, 158, 11, 0.18);
+  color: var(--warn);
+}
+
+.geo-pill.ready {
+  background: rgba(52, 211, 153, 0.16);
+  color: var(--ok);
+}
+
+.geo-pill.idle {
+  background: rgba(148, 163, 184, 0.14);
+  color: var(--muted);
+}
