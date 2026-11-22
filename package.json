@@ -1,0 +1,28 @@
+{
+  "name": "rc-car-explode-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "preview": "vite preview",
+    "test:count": "esbuild scripts/count-parts.ts --bundle --platform=node --format=esm --outfile=node_modules/.tmp/count.mjs && node node_modules/.tmp/count.mjs",
+    "test:engine": "esbuild scripts/smoke-engine.ts --bundle --platform=node --format=esm --outfile=node_modules/.tmp/smoke.mjs && node node_modules/.tmp/smoke.mjs",
+    "test:bench": "esbuild scripts/bench-engine.ts --bundle --platform=node --format=esm --outfile=node_modules/.tmp/bench.mjs && node node_modules/.tmp/bench.mjs",
+    "test:e2e": "esbuild scripts/e2e-check.ts --bundle --platform=node --format=esm --outfile=node_modules/.tmp/e2e.mjs && node node_modules/.tmp/e2e.mjs",
+    "test:e2e:observe": "esbuild scripts/e2e-observe.ts --bundle --platform=node --format=esm --outfile=node_modules/.tmp/e2eobs.mjs && node node_modules/.tmp/e2eobs.mjs"
+  },
+  "dependencies": {
+    "three": "0.169.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/three": "0.169.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11",
+    "vue-tsc": "^2.1.10"
+  }
+}
