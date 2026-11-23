@@ -1,3 +1,19 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# Playwright / 测试产物
+tests/*.png
+test-results
+playwright-report
+
+# 编辑器
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
 .env
 .env.*
 !.env.example

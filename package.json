@@ -1,0 +1,23 @@
+{
+  "name": "curtain-wall-optics",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.22",
+    "three": "^0.166.1",
+    "three-mesh-bvh": "^0.7.8"
+  },
+  "devDependencies": {
+    "@types/three": "^0.166.0",
+    "playwright": "^1.65.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}
