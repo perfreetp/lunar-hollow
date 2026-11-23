@@ -1,0 +1,32 @@
+{
+  "name": "chisha-night-passage",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "vite --port 5310",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5311",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "e2e": "node scripts/e2e.mjs"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "maplibre-gl": "^5.24.1"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.20.5",
+    "playwright-core": "^1.65.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.8",
+    "vitest": "^3.2.7"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  },
+  "description": "白礁水道夜航灯标可视化：海图水深着色、灯塔光晕叠加、航标灯质闪烁与航段导出"
+}
