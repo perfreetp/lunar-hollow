@@ -1,0 +1,29 @@
+/* Base reset. The layout styles live in App.vue (scoped to nothing on purpose
+   so the design system stays in one place). */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(79, 209, 197, 0.6);
+  outline-offset: 2px;
+}

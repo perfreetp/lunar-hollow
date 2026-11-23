@@ -1,0 +1,47 @@
+{
+  "name": "rc-suspension-lab",
+  "version": "1.0.0",
+  "description": "Vue 3 + Babylon.js RC suspension linkage assembly and attitude preview lab",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "vite build && node scripts/smoke.mjs",
+    "verify": "npm run typecheck && npm run test && npm run smoke",
+    "shots": "vite build && node scripts/shots.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfreetp/lunar-hollow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/perfreetp/lunar-hollow/issues"
+  },
+  "homepage": "https://github.com/perfreetp/lunar-hollow#readme",
+  "private": true,
+  "dependencies": {
+    "@babylonjs/core": "^8.56.2",
+    "pinia": "^4.1.0",
+    "vue": "^3.5.46"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.2",
+    "@types/node": "^26.6.6",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "@vue/test-utils": "^2.6.0",
+    "@vue/tsconfig": "^0.9.1",
+    "jsdom": "^27.4.0",
+    "puppeteer-core": "^25.18.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.8",
+    "vitest": "^5.1.1",
+    "vue-tsc": "^3.3.14"
+  }
+}
