@@ -1,0 +1,30 @@
+{
+  "name": "apron-sequence",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --port 4193",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "test:all": "vue-tsc --noEmit && vitest run",
+    "verify": "node tools/run_checks.mjs"
+  },
+  "dependencies": {
+    "three": "^0.187.0",
+    "troika-three-text": "^0.53.1",
+    "vue": "^3.5.46"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "puppeteer-core": "^25.18.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.8",
+    "vitest": "^3.2.7",
+    "vue-tsc": "^3.3.14"
+  }
+}

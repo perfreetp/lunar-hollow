@@ -16,3 +16,9 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+dist/
+preview.log
+preview.err.log
+tools/shots/
+tools/export/
